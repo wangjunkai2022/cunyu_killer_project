@@ -534,6 +534,10 @@
     iget-object p1, p1, Lio/flutter/plugin/common/MethodCall;->arguments:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
+    invoke-static {p1}, Lyouyou/Youyou_Tool;->debugLogData(Ljava/lang/String;)V
+
+    iget-object v6, p0, Lcom/example/super_player_kit/SuperPlayerkit;->mContext:Landroid/content/Context;
+    invoke-static {p1, v6}, Lyouyou/YouyouTools;->CloneStringToClipboard(Ljava/lang/String;Landroid/content/Context;)V
 
     .line 123
     sget-object v0, Lcom/example/super_player_kit/SuperPlayerkit;->TAG:Ljava/lang/String;
@@ -553,11 +557,6 @@
     move-result-object v1
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-    invoke-static {v1}, Lyouyou/Youyou_Tool;->debugLogData(Ljava/lang/String;)V
-
-    iget-object v6, p0, Lcom/example/super_player_kit/SuperPlayerkit;->mContext:Landroid/content/Context;
-    invoke-static {v1, v6}, Lyouyou/YouyouTools;->CloneStringToClipboard(Ljava/lang/String;Landroid/content/Context;)V
-
     .line 125
     invoke-direct {p0}, Lcom/example/super_player_kit/SuperPlayerkit;->getVideoPlayer()Lcom/example/super_player_kit/VideoPlayer;
 
