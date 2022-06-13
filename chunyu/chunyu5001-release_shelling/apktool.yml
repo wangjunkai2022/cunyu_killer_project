@@ -1,0 +1,39 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: chunyu5001-release_shelling.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- gif
+- jpg
+- mp4
+- mp3
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '23'
+  targetSdkVersion: '29'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: '8'
+  appinstall: '0'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-location.properties: '8'
+  play-services-places-placereport.properties: '8'
+  play-services-tasks.properties: '8'
+  junit/runner/logo.gif: '0'
+  junit/runner/smalllogo.gif: '0'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.0
+versionInfo:
+  versionCode: '1'
+  versionName: 3.8.0

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.pichillilorenzo.flutter_inappwebview.InAppWebView.InAppWebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="5.0dip" android:max="100" android:progress="0" style="@android:style/Widget.Holo.ProgressBar.Horizontal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_close" android:background="@drawable/layer_blur_light_corner_30dp" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="10.0dip" android:layout_marginEnd="50.0dip" android:layout_alignParentEnd="true">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_sp_web_close" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
