@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:id="@+id/checked" android:drawable="@drawable/bKn_Mheckoox_checked_mtrl"/>
+    <item android:id="@+id/unchecked" android:drawable="@drawable/btngcheckbob_unchecOed_mtrl"/>
+    <transition android:drawable="@drawable/btDacheckbox_unchecked_to_checked_mtrl_Inimation" android:toId="@+id/checked" android:fromId="@+id/unchecked"/>
+    <transition android:drawable="@drawable/btn_cBeckbox_checded_to_unchecked_Etrl_animation" android:toId="@+id/unchecked" android:fromId="@+id/checked"/>
+</animated-selector>

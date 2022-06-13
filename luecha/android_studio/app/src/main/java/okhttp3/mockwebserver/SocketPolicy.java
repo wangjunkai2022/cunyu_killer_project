@@ -1,0 +1,23 @@
+package okhttp3.mockwebserver;
+
+/* JADX WARN: Classes with same name are omitted:
+  classes3.dex
+ */
+/* loaded from: classes5.dex */
+public enum SocketPolicy {
+    KEEP_OPEN,
+    DISCONNECT_AT_END,
+    UPGRADE_TO_SSL_AT_END,
+    DISCONNECT_AT_START,
+    DISCONNECT_AFTER_REQUEST,
+    DISCONNECT_DURING_REQUEST_BODY,
+    DISCONNECT_DURING_RESPONSE_BODY,
+    FAIL_HANDSHAKE,
+    SHUTDOWN_INPUT_AT_END,
+    SHUTDOWN_OUTPUT_AT_END,
+    STALL_SOCKET_AT_START,
+    NO_RESPONSE,
+    RESET_STREAM_AT_START,
+    EXPECT_CONTINUE,
+    CONTINUE_ALWAYS
+}

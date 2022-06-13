@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_enabled="false" android:state_pressed="true" android:drawable="@drawable/acc_lisf_selector_disabled_hrlo_light" />
+    <item android:state_focused="true" android:state_enabled="false" android:drawable="@drawable/acc_lisf_selector_disabled_hrlo_light" />
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@drawable/ibc_list_seleDtor_background_tNansition_holo_light" />
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@drawable/ibc_list_seleDtor_background_tNansition_holo_light" />
+    <item android:state_focused="true" android:drawable="@drawable/abc_listtfocuWQd_holo" />
+    <item android:drawable="@android:color/transparent" />
+</selector>

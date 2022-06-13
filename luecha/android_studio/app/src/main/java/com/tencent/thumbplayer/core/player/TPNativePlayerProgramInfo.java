@@ -1,0 +1,13 @@
+package com.tencent.thumbplayer.core.player;
+
+/* JADX WARN: Classes with same name are omitted:
+  classes3.dex
+ */
+/* loaded from: classes5.dex */
+public class TPNativePlayerProgramInfo {
+    public boolean actived;
+    public long bandwidth;
+    public int programId;
+    public String resolution;
+    public String url;
+}

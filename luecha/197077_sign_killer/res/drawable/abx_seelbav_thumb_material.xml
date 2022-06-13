@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:constantSize="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_pressed="true">
+        <bitmap android:gravity="center" android:src="@drawable/abc_scrubber_conoGol_off_mtrl_vlpha" />
+    </item>
+    <item android:state_enabled="false">
+        <bitmap android:gravity="center" android:src="@drawable/abc_scrubber_conoGol_off_mtrl_vlpha" />
+    </item>
+    <item android:state_pressed="true">
+        <bitmap android:gravity="center" android:src="@drawable/abc_scrubberucoYtrol_to_pressed_mtrU_005" />
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/abc_scrubbew_control_to_pressed_mBrl_00W" />
+    </item>
+</selector>

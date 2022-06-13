@@ -1,0 +1,68 @@
+package io.flutter.plugins.urllauncher;
+
+import android.util.Log;
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.embedding.engine.plugins.activity.ActivityAware;
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
+import io.flutter.plugin.common.PluginRegistry;
+
+/* JADX WARN: Classes with same name are omitted:
+  classes3.dex
+ */
+/* loaded from: classes5.dex */
+public final class UrlLauncherPlugin implements FlutterPlugin, ActivityAware {
+    private static final String TAG = "UrlLauncherPlugin";
+    private MethodCallHandlerImpl methodCallHandler;
+    private UrlLauncher urlLauncher;
+
+    public static void registerWith(PluginRegistry.Registrar registrar) {
+        new MethodCallHandlerImpl(new UrlLauncher(registrar.context(), registrar.activity())).startListening(registrar.messenger());
+    }
+
+    @Override // io.flutter.embedding.engine.plugins.FlutterPlugin
+    public void onAttachedToEngine(FlutterPlugin.FlutterPluginBinding flutterPluginBinding) {
+        this.urlLauncher = new UrlLauncher(flutterPluginBinding.getApplicationContext(), null);
+        this.methodCallHandler = new MethodCallHandlerImpl(this.urlLauncher);
+        this.methodCallHandler.startListening(flutterPluginBinding.getBinaryMessenger());
+    }
+
+    @Override // io.flutter.embedding.engine.plugins.FlutterPlugin
+    public void onDetachedFromEngine(FlutterPlugin.FlutterPluginBinding flutterPluginBinding) {
+        MethodCallHandlerImpl methodCallHandlerImpl = this.methodCallHandler;
+        if (methodCallHandlerImpl == null) {
+            Log.wtf("UrlLauncherPlugin", "Already detached from the engine.");
+            return;
+        }
+        methodCallHandlerImpl.stopListening();
+        this.methodCallHandler = null;
+        this.urlLauncher = null;
+    }
+
+    @Override // io.flutter.embedding.engine.plugins.activity.ActivityAware
+    public void onAttachedToActivity(ActivityPluginBinding activityPluginBinding) {
+        if (this.methodCallHandler == null) {
+            Log.wtf("UrlLauncherPlugin", "urlLauncher was never set.");
+        } else {
+            this.urlLauncher.setActivity(activityPluginBinding.getActivity());
+        }
+    }
+
+    @Override // io.flutter.embedding.engine.plugins.activity.ActivityAware
+    public void onDetachedFromActivity() {
+        if (this.methodCallHandler == null) {
+            Log.wtf("UrlLauncherPlugin", "urlLauncher was never set.");
+        } else {
+            this.urlLauncher.setActivity(null);
+        }
+    }
+
+    @Override // io.flutter.embedding.engine.plugins.activity.ActivityAware
+    public void onDetachedFromActivityForConfigChanges() {
+        onDetachedFromActivity();
+    }
+
+    @Override // io.flutter.embedding.engine.plugins.activity.ActivityAware
+    public void onReattachedToActivityForConfigChanges(ActivityPluginBinding activityPluginBinding) {
+        onAttachedToActivity(activityPluginBinding);
+    }
+}

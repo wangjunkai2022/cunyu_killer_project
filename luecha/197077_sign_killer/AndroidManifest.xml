@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.le349df9c1.f2f825446e" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:initOrder="1000" android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.INTERNET"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.CAMERA"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:initOrder="1000" android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:initOrder="1000" android:name="android.hardware.camera"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.VIBRATE"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:initOrder="1000" android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:icon="@mipmap/jO_launYher" android:initOrder="1000" android:label="绿茶" android:largeHeap="true" android:name="com.XYLbKnJHsb" android:networkSecurityConfig="@xml/nsc_mitm" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:initOrder="1000" android:launchMode="singleTask" android:name="com.NlSSLrKK.gPIHumaP.EobgqZBdjGPRmJgf" android:screenOrientation="portrait" android:theme="@style/zpvVsRVhjyDEopon" android:windowSoftInputMode="adjustResize">
+            <meta-data android:initOrder="1000" android:name="io.flutter.embedding.android.NormalTheme" android:resource="@style/KihypYLrCZeqZYNU"/>
+            <meta-data android:initOrder="1000" android:name="io.flutter.app.android.SplashScreenUntilFirstFrame" android:value="true"/>
+            <meta-data android:initOrder="1000" android:name="io.flutter.embedding.android.SplashScreenDrawable" android:resource="@drawable/launch_bjckgcoumd"/>
+            <intent-filter>
+                <action android:initOrder="1000" android:name="android.intent.action.MAIN"/>
+                <category android:initOrder="1000" android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:initOrder="1000" android:name="android.intent.action.VIEW"/>
+                <category android:initOrder="1000" android:name="android.intent.category.DEFAULT"/>
+                <category android:initOrder="1000" android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:initOrder="1000" android:name="flutterEmbedding" android:value="2"/>
+        <meta-data android:initOrder="1000" android:name="com.appinstall.APP_KEY" android:value="mxsxhp"/>
+        <provider android:authorities="com.le349df9c1.f2f825446e.flutter_inappwebview.fileprovider" android:exported="false" android:grantUriPermissions="true" android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.bAEgAntnScrhHlUv">
+            <meta-data android:initOrder="1000" android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ZPiYdGHFAVwkImSH"/>
+        </provider>
+        <provider android:authorities="com.le349df9c1.f2f825446e.fileProvider.install" android:exported="false" android:grantUriPermissions="true" android:initOrder="1000" android:name="androidx.core.content.FileProvider">
+            <meta-data android:initOrder="1000" android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/SGUHQpfstadpzQWT"/>
+        </provider>
+        <receiver android:exported="true" android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.EMWMDLBAfCpPMdJI"/>
+        <receiver android:exported="true" android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.hwocOTBlJxcguIKv">
+            <intent-filter>
+                <action android:initOrder="1000" android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.BWEMZNgHwPapSnPy"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize" android:hardwareAccelerated="true" android:initOrder="1000" android:launchMode="singleTop" android:name="com.NlSSLrKK.gPIHumaP.GvTFQjxVwkecXbjr" android:theme="@style/eJOEgvdfdDEXUvvz" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.jNXkEhXpdcfKnlyJ" android:theme="@style/WsEpQUUyvDwXiXJS"/>
+        <receiver android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.SrawkuYXXZxvNdSf"/>
+        <meta-data android:initOrder="1000" android:name="io.flutter.embedded_views_preview" android:value="true"/>
+        <provider android:authorities="com.le349df9c1.f2f825446e.flutter.image_provider" android:exported="false" android:grantUriPermissions="true" android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.osAYrIsVtKiHJvfi">
+            <meta-data android:initOrder="1000" android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/dKDEVnTBQRbVZFTp"/>
+        </provider>
+        <activity android:exported="false" android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.GopqXVGWklgRwUHZ" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="com.le349df9c1.f2f825446e.fileProvider.com.crazecoder.openfile" android:exported="false" android:grantUriPermissions="true" android:initOrder="1000" android:name="com.NlSSLrKK.gPIHumaP.dwnkvyuijBBIRseJ">
+            <meta-data android:initOrder="1000" android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/dATIhPhxHEzmxFPd"/>
+        </provider>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:initOrder="1000" android:name="com.lyokone.location.FlutterLocationService"/>
+        <activity android:exported="false" android:initOrder="1000" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:initOrder="1000" android:name="com.google.android.gms.version" android:value="@integer/XPmXXRItSJoKfSzd"/>
+        <uses-library android:initOrder="1000" android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:initOrder="1000" android:name="androidx.window.sidecar" android:required="false"/>
+    </application>
+</manifest>

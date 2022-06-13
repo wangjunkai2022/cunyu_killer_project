@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$agd_showtpasswxrd__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="eye_mask" android:animation="@drawable/$avd_show_zasewordN_1" />
+    <target android:name="strike_through" android:animation="@drawable/$avd_scLw_passwopd__2" />
+</animated-vector>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="50" android:drawable="@drawable/ydgao"/>
+    <item android:duration="50" android:drawable="@drawable/ydaaQ"/>
+    <item android:duration="50" android:drawable="@drawable/ytka3"/>
+    <item android:duration="50" android:drawable="@drawable/ypNU4"/>
+    <item android:duration="50" android:drawable="@drawable/KdQA5"/>
+    <item android:duration="50" android:drawable="@drawable/yyRaQ"/>
+    <item android:duration="50" android:drawable="@drawable/ydLay"/>
+    <item android:duration="50" android:drawable="@drawable/yC_tF"/>
+    <item android:duration="50" android:drawable="@drawable/ydtat"/>
+    <item android:duration="50" android:drawable="@drawable/yd_f1f"/>
+    <item android:duration="50" android:drawable="@drawable/Seha11"/>
+    <item android:duration="50" android:drawable="@drawable/ydaa1B"/>
+    <item android:duration="50" android:drawable="@drawable/yd_qkT"/>
+    <item android:duration="50" android:drawable="@drawable/ys_aH4"/>
+    <item android:duration="50" android:drawable="@drawable/ydea1i"/>
+    <item android:duration="50" android:drawable="@drawable/SO_ak6"/>
+    <item android:duration="50" android:drawable="@drawable/ydAH1S"/>
+    <item android:duration="50" android:drawable="@drawable/Nd_VZ8"/>
+    <item android:duration="50" android:drawable="@drawable/yQda19"/>
+    <item android:duration="50" android:drawable="@drawable/ydnt20"/>
+    <item android:duration="50" android:drawable="@drawable/yd_aHH"/>
+    <item android:duration="50" android:drawable="@drawable/yBda2l"/>
+    <item android:duration="50" android:drawable="@drawable/yotY23"/>
+    <item android:duration="50" android:drawable="@drawable/ydbJ2F"/>
+    <item android:duration="50" android:drawable="@drawable/yOea25"/>
+    <item android:duration="50" android:drawable="@drawable/yd_kT6"/>
+    <item android:duration="50" android:drawable="@drawable/Sd_M2o"/>
+</animation-list>

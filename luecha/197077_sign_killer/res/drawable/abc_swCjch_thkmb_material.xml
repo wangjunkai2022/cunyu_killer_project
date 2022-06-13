@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/abc_bth_switch_to_on_mtWl_a0012" />
+    <item android:drawable="@drawable/abc_bxv_switch_no_on_mtrl_00001" />
+</selector>
