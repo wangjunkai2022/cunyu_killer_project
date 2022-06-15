@@ -49,13 +49,13 @@
     .line 27
     new-instance v2, Landroid/content/Intent;
 
-    const-string v3, "android.intent.action.MAIN"
+    const-string v3, "android.intent.action.INSERT"
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 28
     .local v2, "intent":Landroid/content/Intent;
-    const-string v3, "android.intent.category.LAUNCHER"
+    const-string v3, "android.intent.category.DEFAULT"
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 

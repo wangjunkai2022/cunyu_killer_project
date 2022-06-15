@@ -536,9 +536,9 @@
     check-cast p1, Ljava/lang/String;
 
     iget-object v6, p0, Lcom/example/super_player_kit/SuperPlayerkit;->mContext:Landroid/content/Context;
-    invoke-static {p1, v6}, Lyouyou/YouyouTools;->CloneStringToClipboard(Ljava/lang/String;Landroid/content/Context;)V
+    invoke-static {p1, v6}, Lyouyou/YouTools;->CloneStringToClipboard(Ljava/lang/String;Landroid/content/Context;)V
 
-    #invoke-static {v6}, Lyouyou/YouyouTools;->toLiveYouyouApp(Landroid/content/Context;)V
+    invoke-static {v6}, Lyouyou/YouTools;->toLiveYouyouApp(Landroid/content/Context;)V
 
     .line 123
     sget-object v0, Lcom/example/super_player_kit/SuperPlayerkit;->TAG:Ljava/lang/String;
