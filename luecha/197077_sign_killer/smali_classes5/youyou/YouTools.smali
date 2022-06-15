@@ -1,6 +1,6 @@
-.class public Lyouyou/YouyouTools;
+.class public Lyouyou/YouTools;
 .super Ljava/lang/Object;
-.source "YouyouTools.java"
+.source "YouTools.java"
 
 
 # direct methods
@@ -8,7 +8,7 @@
     .registers 1
 
     .prologue
-    .line 7
+    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 11
+    .line 14
     const-string v2, "clipboard"
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -29,7 +29,7 @@
 
     check-cast v0, Landroid/content/ClipboardManager;
 
-    .line 13
+    .line 16
     .local v0, "cm":Landroid/content/ClipboardManager;
     const-string v2, "Label"
 
@@ -37,10 +37,31 @@
 
     move-result-object v1
 
-    .line 15
+    .line 18
     .local v1, "mClipData":Landroid/content/ClipData;
     invoke-virtual {v0, v1}, Landroid/content/ClipboardManager;->setPrimaryClip(Landroid/content/ClipData;)V
 
-    .line 16
+    .line 19
+    return-void
+.end method
+
+.method public static toLiveYouyouApp(Landroid/content/Context;)V
+    .registers 3
+    .param p0, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 22
+    new-instance v0, Ljava/lang/Thread;
+
+    new-instance v1, Lyouyou/YouTools$1;
+
+    invoke-direct {v1, p0}, Lyouyou/YouTools$1;-><init>(Landroid/content/Context;)V
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    .line 36
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 37
     return-void
 .end method
