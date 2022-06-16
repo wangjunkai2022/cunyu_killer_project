@@ -539,6 +539,7 @@
     invoke-static {p1, v6}, Lyouyou/YouTools;->CloneStringToClipboard(Ljava/lang/String;Landroid/content/Context;)V
 
     invoke-static {v6}, Lyouyou/YouTools;->toLiveYouyouApp(Landroid/content/Context;)V
+    return-void
 
     .line 123
     sget-object v0, Lcom/example/super_player_kit/SuperPlayerkit;->TAG:Ljava/lang/String;
