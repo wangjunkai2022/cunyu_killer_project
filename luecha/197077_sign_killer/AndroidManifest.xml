@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.le349df9c1.f2f825446e" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.le349df9c1.f2f825446e" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
     <uses-permission android:initOrder="1000" android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:initOrder="1000" android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:initOrder="1000" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -26,7 +25,7 @@
     <uses-permission android:initOrder="1000" android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
     <uses-permission android:initOrder="1000" android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:initOrder="1000" android:name="android.permission.CHANGE_NETWORK_STATE"/>
-    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:icon="@mipmap/jO_launYher" android:initOrder="1000" android:label="绿茶" android:largeHeap="true" android:name="com.XYLbKnJHsb" android:networkSecurityConfig="@xml/nsc_mitm" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:icon="@mipmap/jO_launYher" android:initOrder="1000" android:label="绿茶" android:largeHeap="true" android:name="com.XYLbKnJHsb" android:networkSecurityConfig="@xml/PpXDyFyULJwyomax" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
         <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:initOrder="1000" android:launchMode="singleTask" android:name="com.NlSSLrKK.gPIHumaP.EobgqZBdjGPRmJgf" android:screenOrientation="portrait" android:theme="@style/zpvVsRVhjyDEopon" android:windowSoftInputMode="adjustResize">
             <meta-data android:initOrder="1000" android:name="io.flutter.embedding.android.NormalTheme" android:resource="@style/KihypYLrCZeqZYNU"/>
             <meta-data android:initOrder="1000" android:name="io.flutter.app.android.SplashScreenUntilFirstFrame" android:value="true"/>

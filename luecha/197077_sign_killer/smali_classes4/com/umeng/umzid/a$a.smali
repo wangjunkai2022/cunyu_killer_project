@@ -29,44 +29,37 @@
 
 # virtual methods
 .method public verify(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z
-    # inserted by apk-mitm to disable certificate pinning
-    .locals 1
-    const/4 v0, 0x1
-    return v0
+    .locals 0
 
-    # commented out by apk-mitm to disable old method body
-    #
-    # .locals 0
-    #
-    # invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-    #
-    # move-result p2
-    #
-    # if-nez p2, :cond_1
-    #
-    # const-string p2, "aaid.umeng.com"
-    #
-    # invoke-virtual {p2, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-    #
-    # move-result p2
-    #
-    # if-nez p2, :cond_0
-    #
-    # const-string p2, "pre-aaid.umeng.com"
-    #
-    # invoke-virtual {p2, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-    #
-    # move-result p1
-    #
-    # if-eqz p1, :cond_1
-    #
-    # :cond_0
-    # const/4 p1, 0x1
-    #
-    # return p1
-    #
-    # :cond_1
-    # const/4 p1, 0x0
-    #
-    # return p1
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_1
+
+    const-string p2, "aaid.umeng.com"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_0
+
+    const-string p2, "pre-aaid.umeng.com"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    :cond_0
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_1
+    const/4 p1, 0x0
+
+    return p1
 .end method

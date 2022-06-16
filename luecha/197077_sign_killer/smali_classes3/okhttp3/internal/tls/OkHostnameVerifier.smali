@@ -794,55 +794,48 @@
 .end method
 
 .method public verify(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z
-    # inserted by apk-mitm to disable certificate pinning
     .locals 1
-    const/4 v0, 0x1
-    return v0
 
-    # commented out by apk-mitm to disable old method body
-    #
-    # .locals 1
-    #
-    # const-string v0, "host"
-    #
-    # invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-    #
-    # const-string v0, "session"
-    #
-    # invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-    #
-    # const/4 v0, 0x0
-    #
-    # .line 40
-    # :try_start_0
-    # invoke-interface {p2}, Ljavax/net/ssl/SSLSession;->getPeerCertificates()[Ljava/security/cert/Certificate;
-    #
-    # move-result-object p2
-    #
-    # aget-object p2, p2, v0
-    #
-    # if-eqz p2, :cond_0
-    #
-    # check-cast p2, Ljava/security/cert/X509Certificate;
-    #
-    # invoke-virtual {p0, p1, p2}, Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
-    #
-    # move-result v0
-    #
-    # goto :goto_0
-    #
-    # :cond_0
-    # new-instance p1, Ljava/lang/NullPointerException;
-    #
-    # const-string p2, "null cannot be cast to non-null type java.security.cert.X509Certificate"
-    #
-    # invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-    #
-    # throw p1
-    # :try_end_0
-    # .catch Ljavax/net/ssl/SSLException; {:try_start_0 .. :try_end_0} :catch_0
-    #
-    # :catch_0
-    # :goto_0
-    # return v0
+    const-string v0, "host"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "session"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 40
+    :try_start_0
+    invoke-interface {p2}, Ljavax/net/ssl/SSLSession;->getPeerCertificates()[Ljava/security/cert/Certificate;
+
+    move-result-object p2
+
+    aget-object p2, p2, v0
+
+    if-eqz p2, :cond_0
+
+    check-cast p2, Ljava/security/cert/X509Certificate;
+
+    invoke-virtual {p0, p1, p2}, Lokhttp3/internal/tls/OkHostnameVerifier;->verify(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string p2, "null cannot be cast to non-null type java.security.cert.X509Certificate"
+
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+    :try_end_0
+    .catch Ljavax/net/ssl/SSLException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :goto_0
+    return v0
 .end method

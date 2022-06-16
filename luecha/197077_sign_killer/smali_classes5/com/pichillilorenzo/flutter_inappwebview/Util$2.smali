@@ -30,53 +30,33 @@
 
 # virtual methods
 .method public checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
-    # inserted by apk-mitm to disable certificate pinning
     .locals 0
-    return-void
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/cert/CertificateException;
+        }
+    .end annotation
 
-    # commented out by apk-mitm to disable old method body
-    #
-    # .locals 0
-    # .annotation system Ldalvik/annotation/Throws;
-    #     value = {
-    #         Ljava/security/cert/CertificateException;
-    #     }
-    # .end annotation
-    #
-    # return-void
+    return-void
 .end method
 
 .method public checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
-    # inserted by apk-mitm to disable certificate pinning
     .locals 0
-    return-void
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/cert/CertificateException;
+        }
+    .end annotation
 
-    # commented out by apk-mitm to disable old method body
-    #
-    # .locals 0
-    # .annotation system Ldalvik/annotation/Throws;
-    #     value = {
-    #         Ljava/security/cert/CertificateException;
-    #     }
-    # .end annotation
-    #
-    # return-void
+    return-void
 .end method
 
 .method public getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
-    # inserted by apk-mitm to disable certificate pinning
     .locals 1
-    const/4 v0, 0x0
-    new-array v0, v0, [Ljava/security/cert/X509Certificate;
-    return-object v0
 
-    # commented out by apk-mitm to disable old method body
-    #
-    # .locals 1
-    #
-    # const/4 v0, 0x0
-    #
-    # new-array v0, v0, [Ljava/security/cert/X509Certificate;
-    #
-    # return-object v0
+    const/4 v0, 0x0
+
+    new-array v0, v0, [Ljava/security/cert/X509Certificate;
+
+    return-object v0
 .end method
