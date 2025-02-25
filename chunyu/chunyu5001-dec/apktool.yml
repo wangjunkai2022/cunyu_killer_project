@@ -1,0 +1,35 @@
+version: 2.9.3
+apkFileName: chunyu5001-dec.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  tag: null
+sdkInfo:
+packageInfo:
+  forcedPackageId: null
+  renameManifestPackage: null
+versionInfo:
+  versionCode: null
+  versionName: null
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  appinstall: 0
+  play-services-base.properties: 8
+  play-services-basement.properties: 8
+  play-services-location.properties: 8
+  play-services-places-placereport.properties: 8
+  play-services-tasks.properties: 8
+  junit/runner/logo.gif: 0
+  junit/runner/smalllogo.gif: 0
+  okhttp3/internal/publicsuffix/NOTICE: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 0
+doNotCompress:
+- resources.arsc
+- png
+- gif
+- jpg
+- mp4
+- mp3
